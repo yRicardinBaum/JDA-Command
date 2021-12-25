@@ -9,7 +9,7 @@ public class TestMain {
 
 <<<<<<< HEAD
     public static void main(String[] args) throws LoginException {
-        JDABuilder builder = JDABuilder.createDefault("ODk0MzI1MjU2MDU4MTk2MDQw.YVoXTA.FVZx8zfUaIGZui8zvFIf59pV8nU");
+        JDABuilder builder = JDABuilder.createDefault("TOKEN");
 =======
     public static void main(String[] args) throws LoginException, InterruptedException {
         JDABuilder builder = JDABuilder.createDefault("TOKEN")
