@@ -18,3 +18,4 @@ public class CommandTest extends CommandExecutor {
         });
     }
 }
+
