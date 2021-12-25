@@ -1,35 +1,15 @@
 plugins {
-       id 'java-gradle-plugin'
-       id 'maven-publish'
-       id 'groovy-gradle-plugin'
-       id 'com.gradle.plugin-publish' version '0.16.0'
+       id 'java'
 }
 
-pluginBundle {
-    website = 'https://github.com/yRicardinBaum/JDA-Command'
-    vcsUrl = 'https://github.com/yRicardinBaum/JDA-Command.git'
-    tags = ['command', 'api', 'JDA', 'JDA COMMAND']
-}
-
-gradlePlugin {
-    plugins {
-        greetingsPlugin {
-          id = 'io.github.johndoe.greeting'
-          displayName = 'JDA Command API'
-          description = 'Uma API de comandos para JDA.'
-          implementationClass = 'io.github.johndoe.gradle.GreetingPlugin'
-        }
-      }
-}
 
 group 'ridev.com'
 version '2.1'
 
 repositories {
-        jcenter()
         mavenCentral()
-        gradlePluginPortal()
         maven { url = 'https://jitpack.io/' }
+        jcenter()
 }
 dependencies {
     implementation 'com.github.DV8FromTheWorld:JDA:v5.0.0-alpha.2'
@@ -37,6 +17,3 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 
-test {
-    useJUnitPlatform()
-}
