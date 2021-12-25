@@ -13,7 +13,7 @@ public class TestMain {
     public static RiCommand settings;
 
     public static void main(String[] args) throws LoginException, InterruptedException {
-        JDABuilder builder = JDABuilder.createDefault("ODk0MzI1MjU2MDU4MTk2MDQw.YVoXTA.KaZr6fZV9an7sddnrS5TGHPnZk4")
+        JDABuilder builder = JDABuilder.createDefault("TOKEN")
                 .setBulkDeleteSplittingEnabled(false)
                 .disableCache(CacheFlag.ACTIVITY)
                 .setMemberCachePolicy(MemberCachePolicy.VOICE.or(MemberCachePolicy.OWNER))
