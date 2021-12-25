@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'ridev.com'
+version '2.1'
+
+repositories {
+        mavenCentral()
+
+        maven { url = 'https://jitpack.io/' }
+}
+
+dependencies {
+    implementation 'com.github.DV8FromTheWorld:JDA:v5.0.0-alpha.2'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+}
+
+test {
+    useJUnitPlatform()
+}
