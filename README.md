@@ -10,7 +10,7 @@
 With gradle:
 ```groovy
 dependencies {
-    compile 'ridev.com:Command:2.1'
+    implementation 'ridev.com:Command:2.1'
 }
 ```
 
