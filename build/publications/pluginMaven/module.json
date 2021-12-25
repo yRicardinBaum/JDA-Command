@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ridev.com",
+    "module": "Command",
+    "version": "2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "Command-2.1.jar",
+          "url": "Command-2.1.jar",
+          "size": 4910,
+          "sha512": "5e2b994373b1009ff9b0829102e3f77a81a7cb478d97a99b1f9c782249043c3bc330bd132d6995c2b0d4c2e7acc3f9751617e5df046f0c9f86a5320206c92524",
+          "sha256": "08d076911ae5a1652bf5af5601288c3375956608c7ffb64798c8dc96dedd1746",
+          "sha1": "90915873ef5eefd5bd8e4c6d7de33293d9bd96a0",
+          "md5": "96be1e6c0bd9aa044ea0cb4a339bbd82"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.DV8FromTheWorld",
+          "module": "JDA",
+          "version": {
+            "requires": "v5.0.0-alpha.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "Command-2.1.jar",
+          "url": "Command-2.1.jar",
+          "size": 4910,
+          "sha512": "5e2b994373b1009ff9b0829102e3f77a81a7cb478d97a99b1f9c782249043c3bc330bd132d6995c2b0d4c2e7acc3f9751617e5df046f0c9f86a5320206c92524",
+          "sha256": "08d076911ae5a1652bf5af5601288c3375956608c7ffb64798c8dc96dedd1746",
+          "sha1": "90915873ef5eefd5bd8e4c6d7de33293d9bd96a0",
+          "md5": "96be1e6c0bd9aa044ea0cb4a339bbd82"
+        }
+      ]
+    }
+  ]
+}
