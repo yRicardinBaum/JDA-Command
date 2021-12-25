@@ -21,11 +21,12 @@ dependencies {
 ## Siga como instuido abaixo.
 
 ```java
-public class TestMain {
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
 import javax.security.auth.login.LoginException;
+
+public class TestMain {
     public static JDA bot;
     public static RiCommand settings;
 
