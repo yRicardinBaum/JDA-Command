@@ -50,7 +50,7 @@ public class TestMain {
 # Adicionando um comando
 
  Para isso, eu irei criar uma classe chamada CommandTest.java.
- Nela estaremos extendendo a livraria CommandExecutor (A livraria executadora do comando).
+ Nela estaremos extendendo a livraria RiExecutor (A livraria executadora do comando).
  Seguiresmo também setando as informações do comando com a função super dentro da variavel publica da classe. 
  E assim, passaremos o parametro executeCommand para ser a variável que executará o comando!
  Segue codigo abaixo.
@@ -87,6 +87,61 @@ public class CommandTest extends CommandExecutor {
         cmds.startCommands();
         settings = cmds;
 ```
+
+# Configurações adicionais
+A API também conta com uma configuração avançada!
+Você pode alterar configurações do cooldown como tempo e mensagem.
+E também alterar a mensagem de comando desconhecido!
+Segue instruções abaixo!
+```java
+import message.MessageType;
+import message.SettingMessage;
+import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.Member;
+import org.jetbrains.annotations.NotNull;
+
+import java.awt.*;
+
+public class CommandSettings extends RiSettings {
+
+
+    @Override
+    public int cooldownTime() {
+        return 6;
+    }
+
+    @Override
+    public SettingMessage cooldownMessage(@NotNull Member user, int timeRemaing) {
+        EmbedBuilder embed = new EmbedBuilder();
+        embed.setColor(Color.red);
+        embed.setDescription("Você deve esperar " + timeRemaing + "s para executar outro comando!");
+        return new SettingMessage(MessageType.EMBED).setMessage(embed);
+    }
+
+    @Override
+    public SettingMessage unknowCommand(@NotNull Member author, @NotNull String commandName) {
+        return new SettingMessage(MessageType.TEXT).setMessage("Este comando não existe! Tente utilizar o comando " + TestMain.settings.getPrefix() + "help");
+    }
+}
+```
+Criado a classe de configurações, nós iremos adiciona-la na main!
+Segue codigo abaixo:
+
+```java
+    public static void main(String[] args) throws LoginException {
+        JDABuilder builder = JDABuilder.createDefault("TOKEN");
+        bot = builder.build();
+        RiCommand cmds = new RiCommand(bot, "ri!", new CommandSettings());
+        cmds.addCommand(new CommandTest());
+        cmds.startCommands();
+        System.out.println("BOT INICIADO COM SUCESSO!");
+        settings = cmds;
+    }
+```
+
+
+Relembrando que essa configuração não é algo OBRIGATÓRIO!
+
 
  E pronto! Está tudo funcionando perfeitamente!
 

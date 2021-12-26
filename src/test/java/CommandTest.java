@@ -2,7 +2,7 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 
-public class CommandTest extends CommandExecutor {
+public class CommandTest extends RiExecutor {
 
 
     public CommandTest() {

@@ -5,7 +5,7 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import org.jetbrains.annotations.NotNull;
 
-public class CommandCreator {
+public class RiCreator {
 
     @Getter
     private final String[] args;
@@ -14,7 +14,7 @@ public class CommandCreator {
     @Getter
     private final String name;
     @Getter
-    private final CommandExecutor command;
+    private final RiExecutor command;
     @Getter
     private final MessageChannel channel;
     @Getter
@@ -23,7 +23,7 @@ public class CommandCreator {
     private final Message message;
 
 
-    public CommandCreator(@NonNull Member author, @NonNull MessageChannel channel, @NonNull final String commandName, @NonNull final String prefix, @NotNull final String raw, @NonNull final Message msg, @NonNull final RiCommand settings) {
+    public RiCreator(@NonNull Member author, @NonNull MessageChannel channel, @NonNull final String commandName, @NonNull final String prefix, @NotNull final String raw, @NonNull final Message msg, @NonNull final RiCommand settings) {
         this.channel = channel;
         this.args = raw.replaceFirst(prefix, "").split("\\s+");
         this.name = commandName;

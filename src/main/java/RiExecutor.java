@@ -4,7 +4,7 @@ import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 
 
-public abstract class CommandExecutor {
+public abstract class RiExecutor {
     @Getter
     private final String commandName;
     @Getter
@@ -12,7 +12,7 @@ public abstract class CommandExecutor {
 
 
 
-    public CommandExecutor(String commandName, String... aliases) {
+    public RiExecutor(String commandName, String... aliases) {
         this.commandName = commandName;
         this.aliases = aliases;
     }
