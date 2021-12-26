@@ -6,14 +6,19 @@
  Você precisa adicionar este projeto à lista de dependências de seu projeto! (Gradle).
  Segue as instruções abaixo.
 
+ - JDA (v5.0.0).
+ - Lombok (v1.18.16).
 
 With gradle:
 ```groovy
 repositories {
-    maven { url 'https://jitpack.io' }
+        mavenCentral()
+        maven { url = 'https://jitpack.io/' }
 }
 dependencies {
-    implementation 'ridev.com:Command:2.1'
+    implementation 'com.github.DV8FromTheWorld:JDA:v5.0.0-alpha.2'
+    compileOnly 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 ```
 
