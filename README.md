@@ -16,7 +16,7 @@ repositories {
         maven { url = 'https://jitpack.io/' }
 }
 dependencies {
-    implementation 'com.github.yRicardinBaum:JDA-Command:v1.6'
+    implementation 'com.github.yRicardinBaum:JDA-Command:v1.7'
 }
 ```
 
