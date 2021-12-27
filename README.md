@@ -16,10 +16,7 @@ repositories {
         maven { url = 'https://jitpack.io/' }
 }
 dependencies {
-    implementation 'com.github.DV8FromTheWorld:JDA:v5.0.0-alpha.2'
     implementation 'com.github.yRicardinBaum:JDA-Command:v1.6'
-    compileOnly 'org.projectlombok:lombok:1.18.16'
-    annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 ```
 
