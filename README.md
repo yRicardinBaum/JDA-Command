@@ -9,7 +9,7 @@
  - JDA (v5.0.0).
  - Lombok (v1.18.16).
 
-With gradle:
+Com gradle:
 ```groovy
 repositories {
         mavenCentral()
@@ -18,6 +18,23 @@ repositories {
 dependencies {
     implementation 'com.github.yRicardinBaum:JDA-Command:v1.7'
 }
+```
+Com maven:
+```maven
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+             <dependency>
+            <groupId>com.github.yRicardinBaum</groupId>
+            <artifactId>JDA-Command</artifactId>
+            <version>v1.7</version>
+        </dependency>
+     </dependencies>
 ```
 
 
