@@ -2,12 +2,13 @@
  Esta API foi criando visando uma melhor experiência com o desenvolvedor.
 
 # Dependencia
-
- Você precisa adicionar este projeto à lista de dependências de seu projeto! (Gradle).
- Segue as instruções abaixo.
+ Abaixo estão todas as livrarias usadas nesse projeto:
 
  - JDA (v5.0.0).
  - Lombok (v1.18.16).
+
+ Você precisa adicionar esta api à lista de dependências de seu projeto! (Gradle).
+ Segue as instruções abaixo.
 
 Com gradle:
 ```groovy
