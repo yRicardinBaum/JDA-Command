@@ -25,8 +25,8 @@ dependencies {
 
 # Iniciando
 
- Para iniciarmos, temos que iniciar os comandos juntamente com o bot
- Siga como instuido abaixo.
+ Para iniciarmos, temos que iniciar os comandos juntamente com o bot.
+ Siga como instruido abaixo.
 
 ```java
 import net.dv8tion.jda.api.JDA;
