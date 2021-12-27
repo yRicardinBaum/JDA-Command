@@ -9,7 +9,7 @@ public class TestMain {
 
 
     public static void main(String[] args) throws LoginException {
-        JDABuilder builder = JDABuilder.createDefault("ODk0MzI1MjU2MDU4MTk2MDQw.YVoXTA.SYdh7a4awCUXcblcEf3tohJYOx8");
+        JDABuilder builder = JDABuilder.createDefault("TOKEN");
         bot = builder.build();
         RiCommand cmds = new RiCommand(bot, "ri!", new CommandSettings());
         cmds.addCommand(new CommandTest());
