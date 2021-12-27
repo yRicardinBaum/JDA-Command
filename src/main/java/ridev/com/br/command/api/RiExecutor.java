@@ -1,3 +1,5 @@
+package ridev.com.br.command.api;
+
 import lombok.Getter;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;

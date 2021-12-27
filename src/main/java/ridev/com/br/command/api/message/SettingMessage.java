@@ -1,4 +1,4 @@
-package message;
+package ridev.com.br.command.api.message;
 
 import lombok.Getter;
 import net.dv8tion.jda.api.EmbedBuilder;

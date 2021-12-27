@@ -1,5 +1,7 @@
+package ridev.com.br.command.api;
+
 import lombok.NonNull;
-import message.SettingMessage;
+import ridev.com.br.command.api.message.SettingMessage;
 import net.dv8tion.jda.api.entities.Member;
 
 public abstract class RiSettings {

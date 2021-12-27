@@ -1,4 +1,4 @@
-package cooldown;
+package ridev.com.br.command.api.cooldown;
 
 import java.util.HashMap;
 import java.util.Map;

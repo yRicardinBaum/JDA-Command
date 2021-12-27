@@ -1,8 +1,9 @@
-import message.MessageType;
-import message.SettingMessage;
+import ridev.com.br.command.api.message.MessageType;
+import ridev.com.br.command.api.message.SettingMessage;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import org.jetbrains.annotations.NotNull;
+import ridev.com.br.command.api.RiSettings;
 
 import java.awt.*;
 

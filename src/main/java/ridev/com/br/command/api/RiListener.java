@@ -1,7 +1,9 @@
-import cooldown.RiCooldown;
+package ridev.com.br.command.api;
+
+import ridev.com.br.command.api.cooldown.RiCooldown;
 import lombok.Getter;
 import lombok.NonNull;
-import message.SettingMessage;
+import ridev.com.br.command.api.message.SettingMessage;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;

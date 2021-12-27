@@ -1,5 +1,6 @@
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import ridev.com.br.command.api.RiCommand;
 
 import javax.security.auth.login.LoginException;
 

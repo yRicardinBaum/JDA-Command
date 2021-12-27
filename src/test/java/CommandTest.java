@@ -1,6 +1,7 @@
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
+import ridev.com.br.command.api.RiExecutor;
 
 public class CommandTest extends RiExecutor {
 
