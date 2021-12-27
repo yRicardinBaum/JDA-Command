@@ -10,7 +10,7 @@
 /build/
 /.gradle/
 /out/
-gradle
+/gradle/
 gradle/wrapper
 gradle.properties
 
